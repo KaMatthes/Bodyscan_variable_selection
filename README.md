@@ -10,14 +10,12 @@ Link später einfügen
 
 ```
 .
-+-- analyses
-+-- data
-+-- data-raw
-+-- docs
-+-- paper
-|   \-- supplementary
 +-- R
-+-- stan
-\-- ubelix
++-- data
++-- output
+
 ```
 
+### `analyses` folder 
+
+This folder contains set of literate programming R scripts written either in R or in`R` flavoured `markdown`.  The files are numbered sequentially in order in which they should be executed. The key parts of this folder include:
