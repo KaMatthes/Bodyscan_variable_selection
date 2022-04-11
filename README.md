@@ -16,6 +16,15 @@ Link später einfügen
 
 ```
 
-### `analyses` folder 
+### `R` folder 
 
-This folder contains set of literate programming R scripts written either in R or in`R` flavoured `markdown`.  The files are numbered sequentially in order in which they should be executed. The key parts of this folder include:
+This folder contains all R scripts.
+
+  - `data.R` : prepares the data for the analysis
+  - `Bootstrapping.R` : function of the variable selection
+  - `lineareRegression.R` : functions to calculate the adjusted R-square values of the respective models
+
+### `data` folder
+
+This folder contains the data.
+  - `datcomb.csv` : contains,  body scan variable
