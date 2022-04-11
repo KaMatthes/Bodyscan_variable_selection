@@ -32,7 +32,6 @@ return(datal)
 }
 
 
-
 #VFM
 #VFM~BMI Men
 summary(lm(visceral.adipose.tissue.value~BMIscan,function_lineare_regression(Sexv="M")))

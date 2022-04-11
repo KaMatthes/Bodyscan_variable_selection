@@ -4,8 +4,8 @@
 Healthscore <- read.csv("data/healthscore.csv", sep=";") %>% #
   mutate(ID=id)
 
-data <- read.csv("data/data_study.csv", sep=";") %>%
-  rename(ID=ï..ID ) %>%
+data <- read.csv("data/data_study.csv", sep=";",fileEncoding="UTF-8-BOM") %>%
+  # rename(I=`ï..ID` ) %>%
   full_join(Healthscore) %>%
   mutate(Body.heightM=Body.height..cm./100,
          BMIscan=Weight..kg./(Body.heightM^2),
@@ -26,13 +26,9 @@ Women <- data %>%
 MenV1 <- Men %>%
   select(-Education_cat, -Diet_cat, -Physical.Activity_cat, -Age, -Sex, -ID)
 
-
 WomenV1 <- Women %>%
   select(-Education_cat, -Diet_cat, -Physical.Activity_cat, -Age, -Sex, -ID)
 
-
-#SELECT COMPLETE CASES FOR THE MODELS
-#First model (V1) (body composition + Age + scan mesures selected)
 
 #Selection MenV1 SMM, remove the 3 other body composition variables
 
