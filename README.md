@@ -27,4 +27,4 @@ This folder contains all R scripts.
 ### `data` folder
 
 This folder contains the data.
-  - `datcomb.csv` : contains,  body scan variable
+  - `data_study.csv` : contains socio-demographic, health- and lifestyle Factors, and body scan variables of each participant
