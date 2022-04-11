@@ -3,7 +3,8 @@ function_lineare_regression <- function(Sexv) {
   Healthscore <- read.csv("data/healthscore.csv", sep=";") %>% #
     mutate(ID=id)
   
-  datal <- read.csv("data/datcomb.csv", sep=",") %>%
+  datal <- read.csv("data/data_study.csv", sep=";") %>%
+    rename(ID=ï..ID ) %>%
     full_join(Healthscore) %>%
     mutate(Body.heightM=Body.height..cm./100,
            BMIscan=Weight..kg./(Body.heightM^2),
@@ -13,15 +14,10 @@ function_lineare_regression <- function(Sexv) {
            Physical.Activity_cat=cut(PArec,c(0,2,3,5), label=c("light", "moderate","heavy")),
            SMI=Skeletal.muscle.mass.value/(Body.heightM^2)) %>%
     filter(!(ID == 4 | ID == 18 | ID == 38 | ID == 43 | ID == 44 | ID == 55| ID == 62|
-             ID == 71 | ID == 85 | ID == 90 | ID == 117 | ID == 123 | ID == 135 | ID == 204 |  ID == 216))
-
+             ID == 71 | ID == 85 | ID == 90 | ID == 117 | ID == 123 | ID == 135 | ID == 204 |  ID == 216)) %>%
+    select(-Fat.free.mass.value) %>%
+    filter(complete.cases(.))
   
-completeFun <- function(data, desiredCols) {
-    completeVec <- complete.cases(data[, desiredCols])
-    return(data[completeVec, ])
-  }  
-  
-datal <- completeFun(datal, c(20,21,23,108,5,194,199,205,213,242,249,264,270,286,288,299,302,307,313,315,317,336,338,340,344,346,351,352,368,370,380,382,390,393,395,399))
 
 if(Sexv=="M") {
 datal <- datal %>%
