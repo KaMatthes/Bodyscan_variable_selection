@@ -3,3 +3,21 @@
 ## Paper
 
 Link später einfügen
+
+## Content of this repository
+
+### Structure
+
+```
+.
++-- analyses
++-- data
++-- data-raw
++-- docs
++-- paper
+|   \-- supplementary
++-- R
++-- stan
+\-- ubelix
+```
+
