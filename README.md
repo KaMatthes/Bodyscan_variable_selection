@@ -34,3 +34,8 @@ products, meat, and sweet/salty snacks. For each category the officially recomme
 ### `output` folder
 
 This folder contains the bootstrapping results of each outcome.
+
+### `master.R` 
+
+This skript contains information of the used R packages, number of bootstrapping, set seed etc.. To run the function `bootsptrapping.R`, please run first `data.R`.
+
