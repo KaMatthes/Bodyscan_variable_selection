@@ -2,7 +2,7 @@
 
 
 Healthscore <- read.csv("data/healthscore.csv", sep=";") %>% #
-  mutate(ID=id)
+  rename(ID=id)
 
 data <- read.csv("data/data_study.csv", sep=";",fileEncoding="UTF-8-BOM") %>%
   # rename(I=`ï..ID` ) %>%
@@ -13,108 +13,87 @@ data <- read.csv("data/data_study.csv", sep=";",fileEncoding="UTF-8-BOM") %>%
          Diet_cat = cut(healthyscore,c(-1,1,3,5), label=c("unhealthy", "medium","healthy")),
          Physical.Activity_cat=cut(PArec,c(0,2,3,5), label=c("light", "moderate","heavy")),
          SMI=Skeletal.muscle.mass.value/(Body.heightM^2)) %>%
-  filter(!(ID == 38 | ID == 62| ID == 90 | ID == 216))
+  filter(!(ID == 38 | ID == 62| ID == 90 | ID == 216)) %>%
+  select(-Body.heightM, -PArec, -education,-healthyscore)
   
          
 #Sex group
 Men <- data %>%
-  filter(Sex =="M")
+  filter(Sex =="M") %>%
+  select(-Sex, -ID)
 
 Women <- data %>%
-  filter(Sex =="F")
+  filter(Sex =="F") %>%
+  select(-Sex, -ID)
+
 
 MenV1 <- Men %>%
-  select(-Education_cat, -Diet_cat, -Physical.Activity_cat, -Age, -Sex, -ID)
+  select(-Education_cat, -Diet_cat, -Physical.Activity_cat)
 
 WomenV1 <- Women %>%
-  select(-Education_cat, -Diet_cat, -Physical.Activity_cat, -Age, -Sex, -ID)
+  select(-Education_cat, -Diet_cat, -Physical.Activity_cat)
 
 
-#Selection MenV1 SMM, remove the 3 other body composition variables
+#Selection SNMM
 
 MenSMM1<- MenV1 %>%
-  select(-1,-2,-4,-5)
-
-#Selection Men SMM
-
+  select(-2,-3,-4,-6, -38)
+# 
 MenSMM2<- Men %>%
-  select(-1,-2,-4,-5)
-
-#Selection WomenV1 SMM
+  select(-2,-3,-4,-6, -41)
 
 WomenSMM1<-WomenV1 %>%
-  select(-1,-2,-4,-5)
+  select(-2,-3,-4,-6, -38)
+
+WomenSMM2<- Women %>% 
+  select(-2,-3,-4,-6, -41)
 
 
-#Selection Women SMM
 
-WomenSMM2<- Women %>%
-  select(-1,-2,-4,-5)
-
-#Selection MenV1 SMI
+#Selection SMI
 MenSMI1<- MenV1 %>%
-  select(-1,-2,-3,-4)
-#Selection WomenV1 SMI
+  select(-2,-3,-4,-5,-6)
 
 WomenSMI1 <- WomenV1%>%
-  select(-1,-2,-3,-4)
+  select(-2,-3,-4,-5,-6)
 
-#Selection MenV1 RFM
+#Selection RFM
 
 MenRFM1<- MenV1 %>%
-  select(-2,-3,-4,-5)
-
-
-#Selection Men RFM
+  select(-3,-4,-5,-6,-38)
 
 MenRFM2<- Men %>%
-  select(-2,-3,-4,-5)
-
-#Selection WomenV1 RFM
+  select(-3,-4,-5,-6,-41)
 
 WomenRFM1<- WomenV1 %>%
-  select(-2,-3,-4,-5)
-
-#Selection Women RFM
+  select(-3,-4,-5,-6,-38)
 
 WomenRFM2<-Women %>%
-  select(-2,-3,-4,-5)
+  select(-3,-4,-5,-6,-41)
 
-#Selection MenV1 AFM
+#Selection AFM
 
 MenAFM1<- MenV1 %>%
-  select(-1,-3,-4,-5)
-
-#Selection Men AFM
+  select(-2,-4,-5,-6,-38)
 
 MenAFM2 <- Men %>%
-  select(-1,-3,-4,-5)
-
-#Selection WomenV1 AFM
+  select(-2,-4,-5,-6,-41)
 
 WomenAFM1<- WomenV1 %>%
-  select(-1,-3,-4,-5)
-
-#Selection Women AFM
-
+  select(-2,-4,-5,-6,-38)
 WomenAFM2<- Women %>%
-  select(-1,-3,-4,-5)
+  select(-2,-4,-5,-6,-41)
 
-#Selection MenV1 VFM
 
+# VFM
 MenVFM1<- MenV1 %>%
-  select(-1,-2,-3,-5)
-
-
-#Selection Men VFM
+  select(-2,-3,-4,-5,-38)
 
 MenVFM2<- Men %>%
-  select(-1,-2,-3,-5)
+  select(-2,-3,-4,-5,-41)
 
-#Selection WomenV1 VFM
 WomenVFM1<- WomenV1 %>%
-  select(-1,-2,-3,-5)
+  select(-2,-3,-4,-5,-38)
 
-#Selection Women VFM
 WomenVFM2<- Women %>%
-  select(-1,-2,-3,-5)
+  select(-2,-3,-4,-5,-41)
