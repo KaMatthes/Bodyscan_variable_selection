@@ -29,7 +29,7 @@ This folder contains all R scripts.
 This folder contains the data.
   - `data_study.csv` : contains socio-demographic, health- and lifestyle Factors, and body scan variables of each participant
   - `healthscore.csv` : contains "healthy score" from the food frequency questions calculated from from five food categories: fruits, vegetables, wholegrain
-products, meat, and sweet/salty snacks. For each category the officially recommended minimum or maximum amount of weekly intake was used as the cut-off value and a point was assigned if the recommendation was met. A score from 0 to 5 was built to reflect the overall healthiness of the diet (Ref Sob einfügen)
+products, meat, and sweet/salty snacks. For each category the officially recommended minimum or maximum amount of weekly intake was used as the cut-off value and a point was assigned if the recommendation was met. A score from 0 to 5 was built to reflect the overall healthiness of the diet.
 
 ### `output` folder
 
