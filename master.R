@@ -5,7 +5,7 @@ library(coxed)
 library(tidyverse)
 
 bootnum <- 2000
-setseed <- 20210519 # I would not change this, you need this to get always the same results by running bootstrapping
+setseed <- 20210519 # for bootstrapping
 
 #### load R skript
 source("R/data.R") # load data
