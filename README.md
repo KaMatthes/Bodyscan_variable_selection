@@ -22,8 +22,12 @@ This folder contains all R scripts.
 
   - `data.R` : prepares the data for the analysis
   - `Bootstrapping.R` : function of the variable selection
-  - `lineareRegression.R` : functions to calculate the adjusted R-square values of the respective models
-
+  - `function_data.R` : function to define data for analysis
+  - `lineareRegression.R` : code to calculate the adjusted R-square values of the respective models
+  - `Table1_wilcox_chi2tests.R` : code to create table 1
+  - `plots_body_composition.R` : code to create figure 1
+  - `Appendix_Table1.R` : code to create figure 1
+  
 ### `data` folder
 
 This folder contains the data.
