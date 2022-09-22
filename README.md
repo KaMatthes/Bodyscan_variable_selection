@@ -6,6 +6,10 @@ submitted
 
 ## Data
 
+The data is public available via Zenodo:
+
+
+
 ## Content of this repository
 
 ### Structure
