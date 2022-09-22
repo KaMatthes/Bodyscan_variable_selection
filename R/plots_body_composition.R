@@ -1,5 +1,6 @@
-dataM <- function_data_analysis(Sexv="M")
+dataM <- function_data_analysis(Sexv="M") 
 dataW <- function_data_analysis(Sexv="W")
+
 
 c1 <- ggplot(data= dataM, aes(x = Age_cat, y = visceral.adipose.tissue.value)) +
   geom_boxplot() +
@@ -31,13 +32,13 @@ c4 <- ggplot(data= dataW, aes(x = Age_cat, y = Relative.fat.mass.value)) +
 
 c5 <- ggplot(data= dataM, aes(x = Age_cat, y = SMI)) +
   geom_boxplot() +
-  xlab("Men age category") +
+  xlab("Age category") +
   ylab("Skeletal muscle mass index (kg/m2)") +
   ylim(0,15)
 
 c6 <- ggplot(data= dataW, aes(x = Age_cat, y = SMI)) +
   geom_boxplot() +
-  xlab("Women age category") +
+  xlab("Age category") +
   ylab("") +
   ylim(0,15)
 
