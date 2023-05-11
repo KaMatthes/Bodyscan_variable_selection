@@ -142,8 +142,8 @@ funktion_bootstrap <- function(data.selection, response, Age_pred,setseed,bootnu
 
 #### Variable selection
 
-Results_MenVFM1 <- funktion_bootstrap(data.selection=MenVFM1,Age_pred="No",name.data="MenVFM1",response="visceral.adipose.tissue.value",setseed=setseed,bootnum=bootnum)
-Results_WomenVFM1 <- funktion_bootstrap(data.selection=WomenVFM1, Age_pred="No", name.data="WomenVFM1",response="visceral.adipose.tissue.value",setseed=setseed,bootnum=bootnum)
+Results_MenVAT1 <- funktion_bootstrap(data.selection=MenVAT1,Age_pred="No",name.data="MenVAT1",response="visceral.adipose.tissue.value",setseed=setseed,bootnum=bootnum)
+Results_WomenVAT1 <- funktion_bootstrap(data.selection=WomenVAT1, Age_pred="No", name.data="WomenVAT1",response="visceral.adipose.tissue.value",setseed=setseed,bootnum=bootnum)
 Results_MenAFM1 <- funktion_bootstrap(data.selection=MenAFM1, Age_pred="No", name.data="MenAFM1",response="Absolute.fat.mass.value",setseed=setseed,bootnum=bootnum)
 Results_WomenAFM1 <- funktion_bootstrap(data.selection=WomenAFM1, Age_pred="No", name.data="WomenAFM1",response="Absolute.fat.mass.value",setseed=setseed,bootnum=bootnum)
 Results_MenRFM1 <- funktion_bootstrap(data.selection=MenRFM1, Age_pred="No", name.data="MenRFM1",response="Relative.fat.mass.value",setseed=setseed,bootnum=bootnum)

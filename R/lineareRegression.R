@@ -23,9 +23,9 @@ summary(lm(visceral.adipose.tissue.value~Waist.girth..cm. + Age + Education_cat 
 summary(lm(visceral.adipose.tissue.value~WHtR, function_data_analysis(Sexv="F")))
 summary(lm(visceral.adipose.tissue.value~WHtR + Age,function_data_analysis(Sexv="F")))
 summary(lm(visceral.adipose.tissue.value~WHtR + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))
-summary(lm(visceral.adipose.tissue.value~ Bust.chest.girth..horizontal...cm. + Neck.to.waist.center.back..cm. + Waist.girth..cm. + Body.height..cm.+ High.waist.girth..cm. + Upper.arm.girth.left..cm. +Thigh.girth.left..horizontal...cm. + WHR + Volume.Hip..l.,function_data_analysis(Sexv="F")))
-summary(lm(visceral.adipose.tissue.value~ Bust.chest.girth..horizontal...cm. + Neck.to.waist.center.back..cm. + Waist.girth..cm. + Body.height..cm.+ High.waist.girth..cm. + Upper.arm.girth.left..cm. +Thigh.girth.left..horizontal...cm. + WHR + Volume.Hip..l.+ Age,function_data_analysis(Sexv="F")))
-summary(lm(visceral.adipose.tissue.value~ Bust.chest.girth..horizontal...cm. + Neck.to.waist.center.back..cm. + Waist.girth..cm. + Body.height..cm.+ High.waist.girth..cm. + Upper.arm.girth.left..cm. +Thigh.girth.left..horizontal...cm. + WHR + Volume.Hip..l. + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))
+summary(lm(visceral.adipose.tissue.value~ Bust.chest.girth..horizontal...cm. + Neck.to.waist.center.back..cm. + Waist.girth..cm. + Upper.arm.girth.left..cm. +Thigh.girth.left..horizontal...cm. + WHR + Volume.Hip..l.,function_data_analysis(Sexv="F")))
+summary(lm(visceral.adipose.tissue.value~ Bust.chest.girth..horizontal...cm. + Neck.to.waist.center.back..cm. + Waist.girth..cm. + Upper.arm.girth.left..cm. +Thigh.girth.left..horizontal...cm. + WHR + Volume.Hip..l.+ Age,function_data_analysis(Sexv="F")))
+summary(lm(visceral.adipose.tissue.value~ Bust.chest.girth..horizontal...cm. + Neck.to.waist.center.back..cm. + Waist.girth..cm. + Upper.arm.girth.left..cm. +Thigh.girth.left..horizontal...cm. + WHR + Volume.Hip..l. + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))
 
 
 
@@ -39,12 +39,11 @@ summary(lm(Relative.fat.mass.value~Waist.girth..cm. + Age + Education_cat + Phys
 summary(lm(Relative.fat.mass.value~WHtR,function_data_analysis(Sexv="M")))
 summary(lm(Relative.fat.mass.value~WHtR + Age, function_data_analysis(Sexv="M")))
 summary(lm(Relative.fat.mass.value~WHtR + Age + Education_cat + Physical.Activity_cat +Diet_cat,function_data_analysis(Sexv="M")))
-summary(lm(Relative.fat.mass.value~ Body.height..cm. + Mid.neck.girth..cm. + High.waist.girth..cm. + Hip.girth..cm.+ Maximum.belly.circumference..cm. + Forearm.girth.left..cm. + WHR + Volume.Thigh.Left..l. + Volume.Chest..l. + Volume.Belly..l. + Volume.Hip..l.,function_data_analysis(Sexv="M")))
-summary(lm(Relative.fat.mass.value~ Body.height..cm. + Mid.neck.girth..cm. + High.waist.girth..cm. + Hip.girth..cm.+ Maximum.belly.circumference..cm. + Forearm.girth.left..cm. + WHR + Volume.Thigh.Left..l. + Volume.Chest..l. + Volume.Belly..l. + Volume.Hip..l. + Age,function_data_analysis(Sexv="M")))
-summary(lm(Relative.fat.mass.value~ Body.height..cm. + Mid.neck.girth..cm. + High.waist.girth..cm. + Hip.girth..cm.+ Maximum.belly.circumference..cm. + Forearm.girth.left..cm. + WHR + Volume.Thigh.Left..l. + Volume.Chest..l. + Volume.Belly..l. + Volume.Hip..l. + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
+summary(lm(Relative.fat.mass.value~ Body.height..cm. + Mid.neck.girth..cm. + High.waist.girth..cm. + Maximum.belly.circumference..cm. + Forearm.girth.left..cm. + WHR + Volume.Thigh.Left..l. + Volume.Chest..l. + Volume.Belly..l. + Volume.Hip..l.,function_data_analysis(Sexv="M")))
+summary(lm(Relative.fat.mass.value~ Body.height..cm. + Mid.neck.girth..cm. + High.waist.girth..cm. + Maximum.belly.circumference..cm. + Forearm.girth.left..cm. + WHR + Volume.Thigh.Left..l. + Volume.Chest..l. + Volume.Belly..l. + Volume.Hip..l. + Age,function_data_analysis(Sexv="M")))
+summary(lm(Relative.fat.mass.value~ Body.height..cm. + Mid.neck.girth..cm. + High.waist.girth..cm. + Maximum.belly.circumference..cm. + Forearm.girth.left..cm. + WHR + Volume.Thigh.Left..l. + Volume.Chest..l. + Volume.Belly..l. + Volume.Hip..l. + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
 
 
-summary(lm(Relative.fat.mass.value~WHtR + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
 summary(lm(Relative.fat.mass.value~BMIscan,function_data_analysis(Sexv="F")))
 summary(lm(Relative.fat.mass.value~BMIscan + Age,function_data_analysis(Sexv="F")))
 summary(lm(Relative.fat.mass.value~BMIscan + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))
@@ -74,11 +73,11 @@ summary(lm(SMI~Thigh.girth.left..horizontal...cm.,function_data_analysis(Sexv="M
 summary(lm(SMI~Thigh.girth.left..horizontal...cm. + Age,function_data_analysis(Sexv="M")))
 summary(lm(SMI~Thigh.girth.left..horizontal...cm.+ Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
 summary(lm(SMI~WHtR + Age +  Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
-summary(lm(SMI~Maximum.belly.circumference..cm.+ Forearm.girth.left..cm. + Thigh.girth.left..horizontal...cm. + WHtR + Waist.girth..cm. + Volume.Thigh.Left..l.+ Volume.Chest..l.+ Volume.Belly..l.+ Volume.Hip..l.+ BMIscan,function_data_analysis(Sexv="M")))
-summary(lm(SMI~Maximum.belly.circumference..cm.+ Forearm.girth.left..cm. + Thigh.girth.left..horizontal...cm. + WHtR + Waist.girth..cm. + Volume.Thigh.Left..l.+ Volume.Chest..l.+ Volume.Belly..l.+ Volume.Hip..l.+ BMIscan + Age,function_data_analysis(Sexv="M")))
-summary(lm(SMI~Maximum.belly.circumference..cm.+ Forearm.girth.left..cm. + Thigh.girth.left..horizontal...cm. + WHtR + Waist.girth..cm. + Volume.Thigh.Left..l.+ Volume.Chest..l.+ Volume.Belly..l.+ Volume.Hip..l.+ BMIscan + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
+summary(lm(SMI~Maximum.belly.circumference..cm.+ Forearm.girth.left..cm. + Thigh.girth.left..horizontal...cm. + Volume.Thigh.Left..l.+ Volume.Chest..l.+ Volume.Belly..l.+ Volume.Hip..l.+ BMIscan,function_data_analysis(Sexv="M")))
+summary(lm(SMI~Maximum.belly.circumference..cm.+ Forearm.girth.left..cm. + Thigh.girth.left..horizontal...cm. + Volume.Thigh.Left..l.+ Volume.Chest..l.+ Volume.Belly..l.+ Volume.Hip..l.+ BMIscan + Age,function_data_analysis(Sexv="M")))
+summary(lm(SMI~Maximum.belly.circumference..cm.+ Forearm.girth.left..cm. + Thigh.girth.left..horizontal...cm. + Volume.Thigh.Left..l.+ Volume.Chest..l.+ Volume.Belly..l.+ Volume.Hip..l.+ BMIscan + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
 
-summary(lm(SMI~WHtR + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
+
 summary(lm(SMI~BMIscan,function_data_analysis(Sexv="F")))
 summary(lm(SMI~BMIscan + Age,function_data_analysis(Sexv="F")))
 summary(lm(SMI~BMIscan + Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))
@@ -94,6 +93,6 @@ summary(lm(SMI~Forearm.girth.left..cm.+ Age + Education_cat + Physical.Activity_
 summary(lm(SMI~Thigh.girth.left..horizontal...cm.,function_data_analysis(Sexv="F")))
 summary(lm(SMI~Thigh.girth.left..horizontal...cm. + Age,function_data_analysis(Sexv="F")))
 summary(lm(SMI~Thigh.girth.left..horizontal...cm.+ Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="M")))
-summary(lm(SMI~  Waist.girth..cm. + WHtR +Weight..kg.+ Mid.neck.girth..cm. + Cross.shoulder.over.neck..cm.+  Volume.Thigh.Left..l.+ Volume.Hip..l.+BMIscan ,function_data_analysis(Sexv="F")))
-summary(lm(SMI~ Waist.girth..cm. + WHtR +Weight..kg.+ Mid.neck.girth..cm. + Cross.shoulder.over.neck..cm.+  Volume.Thigh.Left..l.+ Volume.Hip..l.+BMIscan+ Age,function_data_analysis(Sexv="F")))
-summary(lm(SMI~ Waist.girth..cm. + WHtR +Weight..kg.+ Mid.neck.girth..cm. + Cross.shoulder.over.neck..cm.+  Volume.Thigh.Left..l.+ Volume.Hip..l.+BMIscan+ Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))
+summary(lm(SMI~  Waist.girth..cm. + WHtR + Mid.neck.girth..cm. + Cross.shoulder.over.neck..cm.+  Volume.Thigh.Left..l.+ Volume.Hip..l.+BMIscan ,function_data_analysis(Sexv="F")))
+summary(lm(SMI~ Waist.girth..cm. + WHtR + Mid.neck.girth..cm. + Cross.shoulder.over.neck..cm.+  Volume.Thigh.Left..l.+ Volume.Hip..l.+BMIscan+ Age,function_data_analysis(Sexv="F")))
+summary(lm(SMI~ Waist.girth..cm. + WHtR + Mid.neck.girth..cm. + Cross.shoulder.over.neck..cm.+  Volume.Thigh.Left..l.+ Volume.Hip..l.+BMIscan+ Age + Education_cat + Physical.Activity_cat + Diet_cat,function_data_analysis(Sexv="F")))

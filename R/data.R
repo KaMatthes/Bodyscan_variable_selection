@@ -85,15 +85,15 @@ WomenAFM2<- Women %>%
   select(-2,-4,-5,-6,-41)
 
 
-# VFM
-MenVFM1<- MenV1 %>%
+# VAT
+MenVAT1<- MenV1 %>%
   select(-2,-3,-4,-5,-38)
 
-MenVFM2<- Men %>%
+MenVAT2<- Men %>%
   select(-2,-3,-4,-5,-41)
 
-WomenVFM1<- WomenV1 %>%
+WomenVAT1<- WomenV1 %>%
   select(-2,-3,-4,-5,-38)
 
-WomenVFM2<- Women %>%
+WomenVAT2<- Women %>%
   select(-2,-3,-4,-5,-41)
