@@ -5,10 +5,14 @@ library(coxed)
 library(tidyverse)
 library(ggplot2)
 library(ggpubr)
+library(caret)
+library(cowplot)
 
 
 bootnum <- 2000
 setseed <- 20210519 # for bootstrapping
+ctrl <- trainControl(method = "cv", number = 5)
+boot_val <- trainControl(method = "boot", number =2000)
 
 #### load R skript
 source("R/data.R") # load data
