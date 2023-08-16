@@ -2,7 +2,9 @@
 
 ## Paper
 
-submitted
+<br >
+Guarnieri Lopez M, Matthes KL, Sob C, Bender N, Staub K (2023) Associations between 3D surface scanner derived anthropometric measurements and body composition in a cross-sectional study. <i>  Eur J Clin Nutr  </i>  https://doi.org/10.1038/s41430-023-01309-4
+<br >
 
 ## Data
 
