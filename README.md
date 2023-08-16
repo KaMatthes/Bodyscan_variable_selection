@@ -33,10 +33,12 @@ This folder contains all R scripts.
   - `Bootstrapping.R` : function of the variable selection
   - `function_data.R` : function to define data for analysis
   - `lineareRegression.R` : code to calculate the adjusted R-square values of the respective models
-  - `Table1_wilcox_chi2tests.R` : code to create table 1
-  - `plots_body_composition.R` : code to create figure 1
-  - `Appendix_Table1.R` : code to create figure 1
-  
+  - `lineareRegression_bootstrapping.R` : code of the validated boot strapping models (Table 3)
+  - `Table1_wilcox_chi2tests.R` : code to create Table 1
+  - `bland_altman.R` : code of scatterplot comparisons and bland-altman plots (Figure 1 and 2)
+  - `plots_body_composition.R` : code to create Supplement Figure 1
+  - `Appendix_Table1.R` : code to create Supplement Table 1
+    
 ### `data` folder
 
 This folder contains the data.
